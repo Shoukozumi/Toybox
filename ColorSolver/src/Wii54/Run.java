@@ -11,20 +11,6 @@ import java.util.Arrays;
 public class Run {
     private int level = 1;
     public void run(){
-        /*ArrayList<ArrayList<ArrayList<Integer>>> pos = new ArrayList<ArrayList<ArrayList<Integer>>>();
-
-        ArrayList<Integer> row1 = new ArrayList<Integer>(Arrays.asList(1,2,3));
-        ArrayList<Integer> row2 = new ArrayList<Integer>(Arrays.asList(4,5,6));
-        ArrayList<Integer> row3 = new ArrayList<Integer>(Arrays.asList(7,8,9));
-        matrix.add(row1);
-        matrix.add(row2);
-        matrix.add(row3);
-
-        //ArrayList<Integer> pos = new ArrayList<>();
-        for (int i = 0; i < ; i ++){
-            pos
-        }
-        */
         Robot robot;
         try {
             robot = new Robot();
@@ -193,53 +179,6 @@ public class Run {
     }
 
     private int findTheOddOneOutBoxIndex(ArrayList<Color> boxColor){
-        //previous1 -> previous2 -> current
-        /*
-        Color previous1 = null;
-        Color previous2 = null;
-        int index = 0;
-
-        for (int i = 0; i < boxColor.size(); i++){
-            if (previous1 == null){
-                previous1 = boxColor.get(i);
-            }else if (previous2 == null){
-                previous2 = previous1;
-                previous1 = boxColor.get(i);
-            }else {
-                Color current = boxColor.get(i);
-                ArrayList<Integer> a = new ArrayList<>(Arrays.asList(previous1.getRed(),previous1.getGreen(),previous1.getBlue(),previous1.getAlpha()));
-                ArrayList<Integer> b = new ArrayList<>(Arrays.asList(previous2.getRed(),previous2.getGreen(),previous2.getBlue(),previous2.getAlpha()));
-                ArrayList<Integer> c = new ArrayList<>(Arrays.asList(current.getRed(),current.getGreen(),current.getBlue(),current.getAlpha()));
-
-
-
-                if (a.get(0) == b.get(0) && a.get(0) == c.get(0) && a.get(1) == b.get(1) && a.get(1) == c.get(1) && a.get(2) == b.get(2) && a.get(2) == c.get(2) && a.get(3) == b.get(3) && a.get(3) == c.get(3)){
-
-                }
-
-                if (!(current.equals(previous1) && current.equals(previous2))){
-                    //find the different color
-                    if (current.equals(previous1)){
-                        if(current.equals(previous2)){
-                            index = 10;
-                            break;
-                        }else {
-                            index = i - 1;
-                            break;
-                        }
-                    }else{
-                        if(current.equals(previous2)) {
-                            index = i - 2;
-                            break;
-                        }else{
-                            index = i;
-                            break;
-                        }
-                    }
-                }
-
-            }
-        }*/
         Color previous1 = null;
         Color previous2 = null;
         int index = 10;
